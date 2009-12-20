@@ -19,12 +19,14 @@ class testApp : public ofBaseApp{
 		void mouseReleased(int x, int y, int button);
 		void windowResized(int w, int h);
 
+        //all of the variables used
         char forwardcolor;
         char backcolor;
         char leftcolor;
         char rightcolor;
-        float devices;
-        float 	counter;
+        float devices; //will be used for serial
+        float counter;
+        float height;
 
 		ofSerial	serial;
 

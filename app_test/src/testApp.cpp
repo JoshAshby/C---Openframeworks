@@ -1,24 +1,40 @@
 #include "testApp.h"
 //--------------------------------------------------------------
 void testApp::setup(){
+
+    //color of the background
     ofBackground(200,200,200);
+
+    //window title
 	ofSetWindowTitle("Navigation");
+
 	ofSetFrameRate(60);
+
+	//these are for whether the circles are dark blue or light blue
 	forwardcolor = false;
 	backcolor = false;
 	leftcolor = false;
 	rightcolor = false;
+
 	ofSetCircleResolution(500);
+
+	//the counter used to test the colored bars
 	counter = 0;
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
+    //everytime update is called counter will increase by .05
     counter = counter + 0.05;
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
+
+    //these if (color) then sets are for the circles
+    //basically they say "if the color is set to true,
+    //the circle will be light blue/grey
+    //if it's anything else besides true, it is dark blue
     if (forwardcolor){
         ofSetColor(0x456456);
     } else {
@@ -27,6 +43,7 @@ void testApp::draw(){
 	ofFill();
 	ofCircle(200,75,50);
 	ofSetColor(0x000000);
+	//drew the circle, and now to draw the text
 	ofDrawBitmapString("Forward",175,75);
 
 
@@ -62,6 +79,8 @@ void testApp::draw(){
 	ofSetColor(0x000000);
 	ofDrawBitmapString("Right",275,125);
 
+
+    //these two rectangles are the colored bars background
 	ofSetColor(0x092345);
 	ofFill();
 	ofRect(50, 200, 50, 100);
@@ -70,9 +89,12 @@ void testApp::draw(){
 	ofFill();
 	ofRect(300, 200, 50, 100);
 
-	float dist = 250 + 10 * sin(counter);
-	float height = 100 * sin(counter);
+    //give the height float a value
+    //in this case, 100 times the sin of counter (see update)
+	height = 100 * sin(counter);
 
+    //if height is within the proper range, then draw the colored bars
+    //if not, draw them, but do not change their height
 	if (ofInRange(height,10,100)){
 	ofSetColor(0x456456);
 	ofFill();
@@ -92,6 +114,10 @@ void testApp::draw(){
 	}
 }
 
+//--------------------------------------------------------------
+//All of the code down here is to process the keyboard events,
+//and the mouse events, and tell the above code what to do
+//when those events happen, such as change the circle color
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
 	if (key == 'w'){
