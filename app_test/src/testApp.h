@@ -19,6 +19,13 @@ class testApp : public ofBaseApp{
 		void mouseReleased(int x, int y, int button);
 		void windowResized(int w, int h);
 
+        char forwardcolor;
+        char backcolor;
+        char leftcolor;
+        char rightcolor;
+
+		ofSerial	serial;
+
 };
 
 #endif

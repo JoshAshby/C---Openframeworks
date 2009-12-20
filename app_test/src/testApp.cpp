@@ -1,11 +1,7 @@
 #include "testApp.h"
-char forwardcolor;
-char backcolor;
-char leftcolor;
-char rightcolor;
 //--------------------------------------------------------------
 void testApp::setup(){
-    ofBackground(255,255,255);
+    ofBackground(200,200,200);
 	ofSetWindowTitle("Navigation");
 	ofSetFrameRate(60);
 	forwardcolor = false;
@@ -85,6 +81,7 @@ void testApp::keyPressed(int key){
 void testApp::keyReleased(int key){
 	if (key == 'w'){
         forwardcolor = !forwardcolor;
+        serial.enumerateDevices();
 	}
 	if (key == 's'){
         backcolor = !backcolor;
@@ -99,21 +96,48 @@ void testApp::keyReleased(int key){
 
 //--------------------------------------------------------------
 void testApp::mouseMoved(int x, int y ){
-
 }
 
 //--------------------------------------------------------------
 void testApp::mouseDragged(int x, int y, int button){
-
 }
 
 //--------------------------------------------------------------
 void testApp::mousePressed(int x, int y, int button){
-
+    //printf("x = %i \n", x);
+    //printf("y = %i \n", y);
+    //printf("button = %i \n", button);
+    if (ofInRange(x,150,250) && ofInRange(y,25,125)){
+        forwardcolor = !forwardcolor;
+    }
+    if (ofInRange(x,50,150) && ofInRange(y,75,170)){
+        leftcolor = !leftcolor;
+    }
+    if (ofInRange(x,250,350) && ofInRange(y,75,170)){
+        rightcolor = !rightcolor;
+    }
+    if (ofInRange(x,150,250) && ofInRange(y,125,225)){
+        backcolor = !backcolor;
+    }
 }
 
 //--------------------------------------------------------------
 void testApp::mouseReleased(int x, int y, int button){
+    //printf("x = %i \n", x);
+    //printf("y = %i \n", y);
+    //printf("button = %i \n", button);
+    if (ofInRange(x,150,250) && ofInRange(y,25,125)){
+        forwardcolor = !forwardcolor;
+    }
+    if (ofInRange(x,50,150) && ofInRange(y,75,170)){
+        leftcolor = !leftcolor;
+    }
+    if (ofInRange(x,250,350) && ofInRange(y,75,170)){
+        rightcolor = !rightcolor;
+    }
+    if (ofInRange(x,150,250) && ofInRange(y,125,225)){
+        backcolor = !backcolor;
+    }
 
 }
 
@@ -121,4 +145,3 @@ void testApp::mouseReleased(int x, int y, int button){
 void testApp::windowResized(int w, int h){
 
 }
-
