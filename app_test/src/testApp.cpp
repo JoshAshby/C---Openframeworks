@@ -8,11 +8,13 @@ void testApp::setup(){
 	backcolor = false;
 	leftcolor = false;
 	rightcolor = false;
+	ofSetCircleResolution(500);
+	counter = 0;
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
-
+    counter = counter + 0.05;
 }
 
 //--------------------------------------------------------------
@@ -59,6 +61,35 @@ void testApp::draw(){
 	ofCircle(300,125,50);
 	ofSetColor(0x000000);
 	ofDrawBitmapString("Right",275,125);
+
+	ofSetColor(0x092345);
+	ofFill();
+	ofRect(50, 200, 50, 100);
+
+	ofSetColor(0x092345);
+	ofFill();
+	ofRect(300, 200, 50, 100);
+
+	float dist = 250 + 10 * sin(counter);
+	float height = 100 * sin(counter);
+
+	if (ofInRange(height,10,100)){
+	ofSetColor(0x456456);
+	ofFill();
+	ofRect(50, 200, 50, height);
+
+	ofSetColor(0x456456);
+	ofFill();
+	ofRect(300, 200, 50, height);
+	} else {
+	ofSetColor(0x456456);
+	ofFill();
+	ofRect(50, 200, 50, 10);
+
+	ofSetColor(0x456456);
+	ofFill();
+	ofRect(300, 200, 50, 10);
+	}
 }
 
 //--------------------------------------------------------------
@@ -81,7 +112,6 @@ void testApp::keyPressed(int key){
 void testApp::keyReleased(int key){
 	if (key == 'w'){
         forwardcolor = !forwardcolor;
-        serial.enumerateDevices();
 	}
 	if (key == 's'){
         backcolor = !backcolor;

@@ -23,6 +23,8 @@ class testApp : public ofBaseApp{
         char backcolor;
         char leftcolor;
         char rightcolor;
+        float devices;
+        float 	counter;
 
 		ofSerial	serial;
 
