@@ -1,6 +1,6 @@
 obj/Release/src/testApp.o: \
- /home/joshua/Downloads/of_preRelease_v0.06_linux_cb/apps/myApps/app_test/src/testApp.cpp \
- /home/joshua/Downloads/of_preRelease_v0.06_linux_cb/apps/myApps/app_test/src/testApp.h \
+ /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/app_test/src/testApp.cpp \
+ /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/app_test/src/testApp.h \
  ../../../libs/openFrameworks/ofMain.h \
  ../../../libs/openFrameworks/utils/ofConstants.h \
  ../../../libs/glee/GLee.h ../../../libs/openFrameworks/utils/ofMath.h \

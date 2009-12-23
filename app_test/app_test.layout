@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="../../../addons/ofAddons.h" open="1" top="0" tabpos="0">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="src/main.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="219" topLine="0" />
+	</File>
+	<File name="src/testApp.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="5890" topLine="225" />
+	</File>
+	<File name="src/testApp.h" open="0" top="0" tabpos="2">
+		<Cursor position="501" topLine="0" />
+	</File>
+	<File name="../../../libs/openFrameworks/graphics/ofGraphics.h" open="0" top="0" tabpos="0">
+		<Cursor position="180" topLine="0" />
+	</File>
+	<File name="../../../libs/openFrameworks/video/ofVideoPlayer.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="5962" topLine="223" />
+	</File>
+</CodeBlocks_layout_file>

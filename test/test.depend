@@ -1,0 +1,182 @@
+# depslib dependency file v1.0
+1250031603 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb/apps/myApps/test/HardwareSerial.cpp
+	<stdio.h>
+	<string.h>
+	<inttypes.h>
+	"wiring.h"
+	"wiring_private.h"
+	"HardwareSerial.h"
+
+1250031603 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb/apps/myApps/test/wiring.h
+	<avr/io.h>
+	"binary.h"
+
+1250031603 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb/apps/myApps/test/binary.h
+
+1250031603 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb/apps/myApps/test/wiring_private.h
+	<avr/io.h>
+	<avr/interrupt.h>
+	<avr/delay.h>
+	<stdio.h>
+	<stdarg.h>
+	"wiring.h"
+
+1250031603 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb/apps/myApps/test/HardwareSerial.h
+	<inttypes.h>
+	"Print.h"
+
+1250031603 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb/apps/myApps/test/Print.h
+	<inttypes.h>
+	<stdio.h>
+
+1250031603 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb/apps/myApps/test/Print.cpp
+	<stdio.h>
+	<string.h>
+	<math.h>
+	"wiring.h"
+	"Print.h"
+
+1250031603 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb/apps/myApps/test/WInterrupts.c
+	<inttypes.h>
+	<avr/io.h>
+	<avr/interrupt.h>
+	<avr/pgmspace.h>
+	<stdio.h>
+	"WConstants.h"
+	"wiring_private.h"
+
+1250031603 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb/apps/myApps/test/WConstants.h
+	"wiring.h"
+
+1250031603 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb/apps/myApps/test/WMath.cpp
+	"stdlib.h"
+
+1261342771 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb/apps/myApps/test/main.c
+	<avr/io.h>
+
+1261351151 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb/apps/myApps/test/main.cxx
+	"WProgram.h"
+
+1250031603 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb/apps/myApps/test/WProgram.h
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<avr/interrupt.h>
+	"wiring.h"
+	"HardwareSerial.h"
+
+1250031603 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb/apps/myApps/test/pins_arduino.c
+	<avr/io.h>
+	"wiring_private.h"
+	"pins_arduino.h"
+
+1250031603 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb/apps/myApps/test/pins_arduino.h
+	<avr/pgmspace.h>
+
+1250031603 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb/apps/myApps/test/wiring.c
+	"wiring_private.h"
+
+1250031603 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb/apps/myApps/test/wiring_analog.c
+	"wiring_private.h"
+	"pins_arduino.h"
+
+1250031603 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb/apps/myApps/test/wiring_digital.c
+	"wiring_private.h"
+	"pins_arduino.h"
+
+1250031603 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb/apps/myApps/test/wiring_pulse.c
+	"wiring_private.h"
+	"pins_arduino.h"
+
+1250031603 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb/apps/myApps/test/wiring_shift.c
+	"wiring_private.h"
+
+1250031603 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/test/HardwareSerial.cpp
+	<stdio.h>
+	<string.h>
+	<inttypes.h>
+	"wiring.h"
+	"wiring_private.h"
+	"HardwareSerial.h"
+
+1250031603 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/test/wiring.h
+	<avr/io.h>
+	"binary.h"
+
+1250031603 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/test/binary.h
+
+1250031603 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/test/wiring_private.h
+	<avr/io.h>
+	<avr/interrupt.h>
+	<avr/delay.h>
+	<stdio.h>
+	<stdarg.h>
+	"wiring.h"
+
+1250031603 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/test/HardwareSerial.h
+	<inttypes.h>
+	"Print.h"
+
+1250031603 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/test/Print.h
+	<inttypes.h>
+	<stdio.h>
+
+1250031603 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/test/Print.cpp
+	<stdio.h>
+	<string.h>
+	<math.h>
+	"wiring.h"
+	"Print.h"
+
+1250031603 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/test/WInterrupts.c
+	<inttypes.h>
+	<avr/io.h>
+	<avr/interrupt.h>
+	<avr/pgmspace.h>
+	<stdio.h>
+	"WConstants.h"
+	"wiring_private.h"
+
+1250031603 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/test/WConstants.h
+	"wiring.h"
+
+1250031603 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/test/WMath.cpp
+	"stdlib.h"
+
+1261351397 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/test/main.cxx
+	"WProgram.h"
+
+1250031603 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/test/WProgram.h
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<avr/interrupt.h>
+	"wiring.h"
+	"HardwareSerial.h"
+
+1250031603 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/test/pins_arduino.c
+	<avr/io.h>
+	"wiring_private.h"
+	"pins_arduino.h"
+
+1250031603 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/test/pins_arduino.h
+	<avr/pgmspace.h>
+
+1250031603 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/test/wiring.c
+	"wiring_private.h"
+
+1250031603 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/test/wiring_analog.c
+	"wiring_private.h"
+	"pins_arduino.h"
+
+1250031603 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/test/wiring_digital.c
+	"wiring_private.h"
+	"pins_arduino.h"
+
+1250031603 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/test/wiring_pulse.c
+	"wiring_private.h"
+	"pins_arduino.h"
+
+1250031603 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/test/wiring_shift.c
+	"wiring_private.h"
+
