@@ -1,32 +1,45 @@
-#ifndef _THREADED_OBJECT
+ #ifndef _THREADED_OBJECT
 #define _THREADED_OBJECT
 
 #include "ofMain.h"
 #include "ofxThread.h"
+#include <cstring>
 
-// this is not a very exciting example yet
-// but ofThread provides the basis for ofNetwork and other
-// operations that require threading.
-//
-// please be careful - threading problems are notoriously hard
-// to debug and working with threads can be quite difficult
-
+/*
+Threadgui
+2009 - Joshua Ashby
+joshuaashby@joshashby.com
+http://joshashby.com
+*/
 
 class threadedObject : public ofxThread{
 
 	public:
 
-
+                    //yucky thread stuff:
                     // threaded fucntions that share data need to use lock (mutex)
 	                // and unlock in order to write to that data
 	                // otherwise it's possible to get crashes.
 	                //
-	                // also no opengl specific stuff will work in a thread...
-	                // threads can't create textures, or draw stuff on the screen
-	                // since opengl is single thread safe
+	                //This file sets up the thread in charge of all of the buttons,
+	                //and the click functions for them.
+	                //The roundButtons function is called to draw a circular button,
+	                //simply give it the (x,y) of the center of the circle, the radius
+	                //the text, and the number (soon to be removed).
+	                //the function will then draw the button, set up the color change for
+	                //click, and place the text in the center of the button.
 
-		//--------------------------
+		//--------variables---------
 		bool roundbuttons[1024];
+		//this is the max # of buttons, if you change this, change the 1024
+		//in the click statment to the same number you change this to.
+		int xcoord[1024];//and change these three
+		int ycoord[1024];// <--
+		int hvalue[1024];// <--
+		int width;
+		int button;
+		int i;
+		//--------------------------
 		threadedObject(){
 		}
 
@@ -41,33 +54,73 @@ class threadedObject : public ofxThread{
 		//--------------------------
 		void threadedFunction(){
 
-			/*while( isThreadRunning() != 0 ){
+			while( isThreadRunning() != 0 ){
 				if( lock() ){
-
+					unlock();
+					ofSleepMillis(1 * 1000);
 				}
-			}*/
+			}
 		}
 
 		//--------------------------
 		void roundButton(int x, int y, int h, char srt[15], int color){
-            //printf("got:\n x: %i \n y: %i \n h: %i \n text: %s \n if-then: %s \n", x, y, h, srt, color);
-            roundbuttons[color] = false;
-            if (roundbuttons[color]){
-                ofSetColor(0x456456);
+            //thread stuff
+		    if( lock() ){
+		        unlock();
+		    }else{
+				printf("can't lock!\neither an error\nor the thread has stopped");
+			}
+//debug            printf("got:\n x: %i \n y: %i \n h: %i \n text: %s \n if-then: %s \n", x, y, h, srt, color);
+            //draw the circle with radius h at cord. (x,y)
+            xcoord[color] = x-h;
+            ycoord[color] = y-h;
+            hvalue[color] = h;
+//debug            printf("x:%i\ny:%i\n",xcoord[color],ycoord[color]);
+            if (roundbuttons[color]) {
+                ofSetColor(0x029807);
             } else {
-                ofSetColor(0x092345);
+                ofSetColor(0x456456);
             }
             ofFill();
             ofCircle(x,y,h);
-            ofSetColor(0xffffff);
-            x = x-h+30;
-            ofDrawBitmapString(srt,x,y);
 
-			if( lock() ){
-				unlock();
-			}else{
-//				str = "can't lock!\neither an error\nor the thread has stopped";
+            //calculate how far over the text needs to be to be in the center of the circle
+            width = strlen(srt);
+            width = (width*8)/2;//8 is the average width of a letter for this
+
+            //draw the text in the center of the circle
+            ofSetColor(0x000000);
+            x = x-width;
+            ofDrawBitmapString(srt,x,y);
+		}
+        //-----------------------------
+		void click(int x, int y){
+		    //thread stuff
+		    if( lock() ){
+		        unlock();
+		    }else{
+				printf("can't lock!\neither an error\nor the thread has stopped");
 			}
+			//setup two variables
+            int xc;
+            int yc;
+            //here we go (cycling through the buttons
+            for (i = 0; i < 1024; i++){
+                //get the lower corner coordinates
+                xc = xcoord[i] + hvalue[i]*2;
+                yc = ycoord[i] + hvalue[i]*2;
+//debug                printf("x: %i\ny: %i\nxcoord: %i\nycoord: %i\nxc: %i\nyc: %i\nh: %i\n",x,y,xcoord[i],ycoord[i],xc,yc,hvalue[i]);
+                //if the x is with in range of a button
+                if (x > xcoord[i] && x < xc){
+                    //then see if y is in range
+                    if (y > ycoord[i] && y < yc){
+//debug                        printf("y: %i\n",y);
+                        //if it is, change the that buttons color
+                        button = i;
+                        roundbuttons[button] = !roundbuttons[button];
+                    }
+                }
+            }
 		}
 
 };

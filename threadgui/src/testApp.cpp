@@ -6,6 +6,7 @@ bool locked = false;
 //--------------------------------------------------------------
 void testApp::setup(){
 	TO.start();
+	ofSetWindowTitle("Threadgui Example");
 }
 
 //--------------------------------------------------------------
@@ -15,9 +16,9 @@ void testApp::update(){
 
 //--------------------------------------------------------------
 void testApp::draw(){
-	TO.roundButton(100,100,50,"hello",0);
-	TO.roundButton(200,100,60,"bye",1);
-	TO.roundButton(400,100,80,"rawr",2);
+	TO.roundButton(100,100,50,"Hello",0); //draw a few buttons
+	TO.roundButton(300,100,60,"Good Bye",1);
+	TO.roundButton(500,100,80,"Click Me",2);
 }
 
 //--------------------------------------------------------------
@@ -41,10 +42,13 @@ void testApp::mouseDragged(int x, int y, int button){
 
 //--------------------------------------------------------------
 void testApp::mousePressed(int x, int y, int button){
+    //send the (x,y) to the gui thread to see if you clicked on a button
+    TO.click(x,y);
 }
 
 //--------------------------------------------------------------
 void testApp::mouseReleased(int x, int y, int button){
+    TO.click(x,y);
 }
 
 //--------------------------------------------------------------

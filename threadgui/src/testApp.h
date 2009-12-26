@@ -4,8 +4,7 @@
 
 #include "ofMain.h"
 
-// this h file has the definition for an object that uses the threaded addon:
-
+// this h file has the definition for the threaded gui:
 #include "threadedObject.h"
 
 class testApp : public ofBaseApp{
@@ -24,8 +23,6 @@ class testApp : public ofBaseApp{
 		void windowResized(int w, int h);
 
 		threadedObject	TO;
-
-		int				mainAppsCount;
 };
 
 

@@ -1207,7 +1207,7 @@
 	"ofMain.h"
 	"threadedObject.h"
 
-1261596630 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/addonsExamples/threadExample/src/threadedObject.h
+1261607516 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/addonsExamples/threadExample/src/threadedObject.h
 	"ofMain.h"
 	"ofxThread.h"
 	<cstring>
@@ -1369,4 +1369,238 @@
 
 1254924118 /usr/include/gstreamer-0.10/gst/base/gstbasesink.h
 	<gst/gst.h>
+
+1261607516 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/addonsExamples/threadExample/src/testApp.cpp
+	"testApp.h"
+	"stdio.h"
+
+1236629662 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/threadgui/src/main.cpp
+	"ofMain.h"
+	"testApp.h"
+	"ofAppGlutWindow.h"
+
+1261808315 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/threadgui/src/testApp.h
+	"ofMain.h"
+	"threadedObject.h"
+
+1261808315 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/threadgui/src/threadedObject.h
+	"ofMain.h"
+	"ofxThread.h"
+	<cstring>
+
+1196014039 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/threadgui/src/boost/multi_array.hpp
+	"boost/multi_array/base.hpp"
+	"boost/multi_array/collection_concept.hpp"
+	"boost/multi_array/copy_array.hpp"
+	"boost/multi_array/iterator.hpp"
+	"boost/multi_array/subarray.hpp"
+	"boost/multi_array/multi_array_ref.hpp"
+	"boost/multi_array/algorithm.hpp"
+	"boost/array.hpp"
+	"boost/mpl/if.hpp"
+	"boost/type_traits.hpp"
+	<algorithm>
+	<cstddef>
+	<functional>
+	<numeric>
+	<vector>
+
+1261808085 source:/home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/threadgui/src/testApp.cpp
+	"testApp.h"
+	"stdio.h"
+
+1196014039 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/threadgui/src/multi_array.hpp
+	"boost/multi_array/base.hpp"
+	"boost/multi_array/collection_concept.hpp"
+	"boost/multi_array/copy_array.hpp"
+	"boost/multi_array/iterator.hpp"
+	"boost/multi_array/subarray.hpp"
+	"boost/multi_array/multi_array_ref.hpp"
+	"boost/multi_array/algorithm.hpp"
+	"boost/array.hpp"
+	"boost/mpl/if.hpp"
+	"boost/type_traits.hpp"
+	<algorithm>
+	<cstddef>
+	<functional>
+	<numeric>
+	<vector>
+
+1196014039 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/threadgui/src/boost/multi_array/base.hpp
+	"boost/multi_array/extent_range.hpp"
+	"boost/multi_array/extent_gen.hpp"
+	"boost/multi_array/index_range.hpp"
+	"boost/multi_array/index_gen.hpp"
+	"boost/multi_array/storage_order.hpp"
+	"boost/multi_array/types.hpp"
+	"boost/config.hpp"
+	"boost/multi_array/concept_checks.hpp"
+	"boost/mpl/eval_if.hpp"
+	"boost/mpl/if.hpp"
+	"boost/mpl/size_t.hpp"
+	"boost/mpl/aux_/msvc_eti_base.hpp"
+	"boost/iterator/reverse_iterator.hpp"
+	"boost/static_assert.hpp"
+	"boost/type.hpp"
+	"boost/assert.hpp"
+	<cstddef>
+	<memory>
+
+1070305631 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/threadgui/src/boost/multi_array/collection_concept.hpp
+	"boost/concept_check.hpp"
+
+1196014039 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/threadgui/src/boost/multi_array/copy_array.hpp
+	"boost/type.hpp"
+	"boost/assert.hpp"
+
+1149109198 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/threadgui/src/boost/multi_array/iterator.hpp
+	"boost/multi_array/base.hpp"
+	"boost/iterator/iterator_facade.hpp"
+	"boost/mpl/aux_/msvc_eti_base.hpp"
+	<algorithm>
+	<cstddef>
+	<iterator>
+
+1196014039 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/threadgui/src/boost/multi_array/subarray.hpp
+	"boost/multi_array/base.hpp"
+	"boost/multi_array/concept_checks.hpp"
+	"boost/limits.hpp"
+	"boost/type.hpp"
+	<algorithm>
+	<cstddef>
+	<functional>
+
+1196014039 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/threadgui/src/boost/multi_array/multi_array_ref.hpp
+	"boost/multi_array/base.hpp"
+	"boost/multi_array/collection_concept.hpp"
+	"boost/multi_array/concept_checks.hpp"
+	"boost/multi_array/iterator.hpp"
+	"boost/multi_array/storage_order.hpp"
+	"boost/multi_array/subarray.hpp"
+	"boost/multi_array/view.hpp"
+	"boost/multi_array/algorithm.hpp"
+	"boost/type_traits/is_integral.hpp"
+	"boost/array.hpp"
+	"boost/concept_check.hpp"
+	"boost/functional.hpp"
+	"boost/limits.hpp"
+	<algorithm>
+	<cstddef>
+	<functional>
+	<numeric>
+
+1105381776 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/threadgui/src/boost/multi_array/algorithm.hpp
+	"boost/iterator.hpp"
+
+1243058442 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/threadgui/src/boost/array.hpp
+	<cstddef>
+	<stdexcept>
+	<boost/assert.hpp>
+	<boost/swap.hpp>
+	<boost/detail/iterator.hpp>
+	<boost/throw_exception.hpp>
+	<algorithm>
+	<boost/config.hpp>
+
+1223705942 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/threadgui/src/boost/mpl/if.hpp
+	<boost/mpl/aux_/value_wknd.hpp>
+	<boost/mpl/aux_/static_cast.hpp>
+	<boost/mpl/aux_/na_spec.hpp>
+	<boost/mpl/aux_/lambda_support.hpp>
+	<boost/mpl/aux_/config/integral.hpp>
+	<boost/mpl/aux_/config/ctps.hpp>
+	<boost/mpl/aux_/config/workaround.hpp>
+
+1196014039 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/apps/myApps/threadgui/src/boost/type_traits.hpp
+	"boost/type_traits/add_const.hpp"
+	"boost/type_traits/add_cv.hpp"
+	"boost/type_traits/add_pointer.hpp"
+	"boost/type_traits/add_reference.hpp"
+	"boost/type_traits/add_volatile.hpp"
+	"boost/type_traits/alignment_of.hpp"
+	"boost/type_traits/has_nothrow_assign.hpp"
+	"boost/type_traits/has_nothrow_constructor.hpp"
+	"boost/type_traits/has_nothrow_copy.hpp"
+	"boost/type_traits/has_nothrow_destructor.hpp"
+	"boost/type_traits/has_trivial_assign.hpp"
+	"boost/type_traits/has_trivial_constructor.hpp"
+	"boost/type_traits/has_trivial_copy.hpp"
+	"boost/type_traits/has_trivial_destructor.hpp"
+	"boost/type_traits/has_virtual_destructor.hpp"
+	"boost/type_traits/is_signed.hpp"
+	"boost/type_traits/is_unsigned.hpp"
+	"boost/type_traits/is_abstract.hpp"
+	"boost/type_traits/is_arithmetic.hpp"
+	"boost/type_traits/is_array.hpp"
+	"boost/type_traits/is_base_and_derived.hpp"
+	"boost/type_traits/is_base_of.hpp"
+	"boost/type_traits/is_class.hpp"
+	"boost/type_traits/is_compound.hpp"
+	"boost/type_traits/is_const.hpp"
+	"boost/type_traits/is_convertible.hpp"
+	"boost/type_traits/is_empty.hpp"
+	"boost/type_traits/is_enum.hpp"
+	"boost/type_traits/is_float.hpp"
+	"boost/type_traits/is_floating_point.hpp"
+	"boost/type_traits/is_function.hpp"
+	"boost/type_traits/is_fundamental.hpp"
+	"boost/type_traits/is_integral.hpp"
+	"boost/type_traits/is_member_function_pointer.hpp"
+	"boost/type_traits/is_member_object_pointer.hpp"
+	"boost/type_traits/is_member_pointer.hpp"
+	"boost/type_traits/is_object.hpp"
+	"boost/type_traits/is_pod.hpp"
+	"boost/type_traits/is_polymorphic.hpp"
+	"boost/type_traits/is_pointer.hpp"
+	"boost/type_traits/is_reference.hpp"
+	"boost/type_traits/is_same.hpp"
+	"boost/type_traits/is_scalar.hpp"
+	"boost/type_traits/is_stateless.hpp"
+	"boost/type_traits/is_union.hpp"
+	"boost/type_traits/is_void.hpp"
+	"boost/type_traits/is_volatile.hpp"
+	"boost/type_traits/rank.hpp"
+	"boost/type_traits/extent.hpp"
+	"boost/type_traits/remove_bounds.hpp"
+	"boost/type_traits/remove_extent.hpp"
+	"boost/type_traits/remove_all_extents.hpp"
+	"boost/type_traits/remove_const.hpp"
+	"boost/type_traits/remove_cv.hpp"
+	"boost/type_traits/remove_pointer.hpp"
+	"boost/type_traits/remove_reference.hpp"
+	"boost/type_traits/remove_volatile.hpp"
+	"boost/type_traits/type_with_alignment.hpp"
+	"boost/type_traits/function_traits.hpp"
+	"boost/type_traits/aligned_storage.hpp"
+	"boost/type_traits/floating_point_promotion.hpp"
+	"boost/type_traits/integral_promotion.hpp"
+	"boost/type_traits/promote.hpp"
+	<boost/type_traits/make_unsigned.hpp>
+	<boost/type_traits/make_signed.hpp>
+	<boost/type_traits/decay.hpp>
+	<boost/type_traits/is_complex.hpp>
+	"boost/type_traits/ice.hpp"
+
+1258483606 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/libs/boost/algorithm
+
+1258483643 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/libs/boost/functional
+
+1196014039 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/libs/boost/multi_array.hpp
+	"boost/multi_array/base.hpp"
+	"boost/multi_array/collection_concept.hpp"
+	"boost/multi_array/copy_array.hpp"
+	"boost/multi_array/iterator.hpp"
+	"boost/multi_array/subarray.hpp"
+	"boost/multi_array/multi_array_ref.hpp"
+	"boost/multi_array/algorithm.hpp"
+	"boost/array.hpp"
+	"boost/mpl/if.hpp"
+	"boost/type_traits.hpp"
+	<algorithm>
+	<cstddef>
+	<functional>
+	<numeric>
+	<vector>
+
+1258483642 /home/joshua/Downloads/of_preRelease_v0.06_linux_cb_FAT/libs/boost/numeric
 

@@ -2,10 +2,10 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="threadExample" />
+		<Option title="threadgui" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
-		<Option virtualFolders="addons/;libs/;src/;libs/openframeworks/;libs/openframeworks/app/;libs/openframeworks/communication/;libs/openframeworks/graphics/;libs/openframeworks/sound/;libs/openframeworks/utils/;libs/openframeworks/video/;libs/openframeworks/events/;addons/ofxThread/src/;" />
+		<Option virtualFolders="src/;libs/;libs/openframeworks/;libs/openframeworks/app/;libs/openframeworks/communication/;libs/openframeworks/graphics/;libs/openframeworks/sound/;libs/openframeworks/utils/;libs/openframeworks/video/;libs/openframeworks/events/;addons/ofxThread/src/;" />
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/threadExample_debug" prefix_auto="1" extension_auto="1" />
@@ -40,7 +40,7 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add option="-fexceptions " />
+			<Add option="-fexceptions" />
 			<Add directory="../../../addons/" />
 			<Add directory="../../../libs/openFrameworks/" />
 			<Add directory="../../../libs/openFrameworks/events" />
@@ -65,6 +65,7 @@
 			<Add directory="../../../addons" />
 			<Add directory="../../../libs/poco/include" />
 			<Add directory="../../../addons/ofxThread/src" />
+			<Add directory="../../../libs/boost" />
 		</Compiler>
 		<Linker>
 			<Add library="fmodex" />
