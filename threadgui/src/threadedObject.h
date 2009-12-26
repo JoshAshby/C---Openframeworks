@@ -61,7 +61,26 @@ class threadedObject : public ofxThread{
 				}
 			}
 		}
+        //--------------------------
+        void label(int x, int y, char str[20]){
+            //thread stuff
+		    if( lock() ){
+		        unlock();
+		    }else{
+				printf("can't lock!\neither an error\nor the thread has stopped");
+			}
+			int width;
+            ofSetRectMode(OF_RECTMODE_CORNER);
 
+			width = strlen(str)*8 + 10;
+
+			ofSetColor(0x029807);
+			ofFill();
+			ofRect(x,y,width,20);
+
+			ofSetColor(0xffffff);
+            ofDrawBitmapString(str,x+5,y+15);
+        }
 		//--------------------------
 		void roundButton(int x, int y, int h, char srt[15], int color){
             //thread stuff
@@ -82,6 +101,10 @@ class threadedObject : public ofxThread{
                 ofSetColor(0x456456);
             }
             ofFill();
+            ofCircle(x,y,h);
+
+            ofNoFill();
+            ofSetColor(0xffffff);
             ofCircle(x,y,h);
 
             //calculate how far over the text needs to be to be in the center of the circle
@@ -118,11 +141,46 @@ class threadedObject : public ofxThread{
                         //if it is, change the that buttons color
                         button = i;
                         roundbuttons[button] = !roundbuttons[button];
+                        //place case statement here for button functions.
+                        switch (button) {
+                            case 0:
+                                printf("Hello\n");
+                                break;
+                            case 1:
+                                printf("Good Bye\n");
+                                break;
+                            case 2:
+                                printf("Click Me\n");
+                                break;
+                        }
                     }
                 }
             }
 		}
-
+		//---------------------------
+		//Second click that does it by button number so you can use this in the testApp::keyPressed for example
+		//or generating a sequence to change them
+		void click(int color){
+		    //thread stuff
+		    if( lock() ){
+		        unlock();
+		    }else{
+				printf("can't lock!\neither an error\nor the thread has stopped");
+			}
+            roundbuttons[color] = !roundbuttons[color];
+            //place case statement here for button functions.
+            switch (button) {
+                case 0:
+                    printf("Hello\n");
+                    break;
+                case 1:
+                    printf("Good Bye\n");
+                    break;
+                case 2:
+                    printf("Click Me\n");
+                    break;
+            }
+		}
 };
 
 #endif

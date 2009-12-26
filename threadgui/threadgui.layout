@@ -4,13 +4,13 @@
 	<File name="src/main.cpp" open="1" top="0" tabpos="1">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="src/testApp.cpp" open="1" top="0" tabpos="2">
-		<Cursor position="0" topLine="0" />
+	<File name="src/testApp.cpp" open="1" top="1" tabpos="2">
+		<Cursor position="193" topLine="8" />
 	</File>
 	<File name="src/testApp.h" open="1" top="0" tabpos="3">
-		<Cursor position="0" topLine="0" />
+		<Cursor position="113" topLine="0" />
 	</File>
 	<File name="src/threadedObject.h" open="1" top="0" tabpos="4">
-		<Cursor position="104" topLine="0" />
+		<Cursor position="2596" topLine="75" />
 	</File>
 </CodeBlocks_layout_file>
