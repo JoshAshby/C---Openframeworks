@@ -2,26 +2,44 @@
 #include "stdio.h"
 
 bool locked = false;
+float serialdata;
+float ludata;
+float rudata;
 
 //--------------------------------------------------------------
 void testApp::setup(){
 	TO.start();
-	ofSetWindowTitle("Threadgui ");
+	ofSetWindowTitle("Threadgui Example");
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
-	ofBackground(0,0,0);   // black because threads are EVIL ;)
+	ofBackground(0,0,0);
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
-	TO.roundButton(75,100,20,"<",0); //draw a few buttons
+    TO.roundButton(0,0,40,"",4);
+    //draw a label
+	TO.label(20,45,"Movement");
+	//draw a few buttons
+	TO.roundButton(75,100,20,"<",0);
 	TO.roundButton(125,100,20,"V",1);
 	TO.roundButton(175,100,20,">",2);
 	TO.roundButton(125,50,20,"^",3);
-	//draw a label
-	TO.label(20,45,"Movement");
+
+	TO.label(500,45,"Data");
+	TO.line(520,70,520,350,5);
+
+	TO.bullet(400,90,"Serial");
+	TO.text(550,90,serialdata);
+	TO.line(420,105,620,105,2);
+	TO.mlbullet(400,120,"Left\nUltrasound");
+	TO.text(550,120,ludata);
+	TO.line(420,135,620,135,2);
+	TO.mlbullet(400,150,"Right\nUnltrasound");
+	TO.text(550,150,rudata);
+
 }
 
 //--------------------------------------------------------------

@@ -102,7 +102,6 @@ class threadedObject : public ofxThread{
             }
             ofFill();
             ofCircle(x,y,h);
-
             ofNoFill();
             ofSetColor(0xffffff);
             ofCircle(x,y,h);
@@ -142,17 +141,7 @@ class threadedObject : public ofxThread{
                         button = i;
                         roundbuttons[button] = !roundbuttons[button];
                         //place case statement here for button functions.
-                        switch (button) {
-                            case 0:
-                                printf("Hello\n");
-                                break;
-                            case 1:
-                                printf("Good Bye\n");
-                                break;
-                            case 2:
-                                printf("Click Me\n");
-                                break;
-                        }
+                        buttonAction(button);
                     }
                 }
             }
@@ -169,18 +158,92 @@ class threadedObject : public ofxThread{
 			}
             roundbuttons[color] = !roundbuttons[color];
             //place case statement here for button functions.
+            //threadedObject.buttonAction(button);
+            buttonAction(button);
+		}
+		//---------------------------
+		void buttonAction(int button){
             switch (button) {
                 case 0:
-                    printf("Hello\n");
+                    printf("<\n");
                     break;
                 case 1:
-                    printf("Good Bye\n");
+                    printf("V\n");
                     break;
                 case 2:
-                    printf("Click Me\n");
+                    printf(">\n");
+                    break;
+                case 3:
+                    printf("^\n");
+                    break;
+                case 4:
+                    ofSetWindowShape(800,400);
                     break;
             }
 		}
+		//-------------------------
+        void line(int x,int y, int xc, int yc, int thick){
+            ofSetColor(0xffffff);
+            ofPushStyle();
+            ofSetLineWidth(thick);
+            ofLine(x,y,xc,yc);
+            ofPopStyle();
+        }
+        //--------------------------
+        void bullet(int x, int y, char str[20]){
+            int xt;
+            int yt;
+
+            xt = x + 15;
+            yt = y + 4;
+
+            ofFill();
+            ofSetColor(0x029807);
+            ofCircle(x,y,5);
+
+            ofPushStyle();
+            ofSetLineWidth(2);
+            ofNoFill();
+            ofSetColor(0xffffff);
+            ofCircle(x,y,5);
+            ofPopStyle();
+
+            ofSetColor(0xffffff);
+            ofDrawBitmapString(str,xt,yt);
+        }
+        //--------------------------
+        void text(int x, int y, float data){
+            char str[20];
+            y = y+4;
+
+            sprintf(str,"%i",data);
+
+            ofSetColor(0xffffff);
+            ofDrawBitmapString(str,x,y);
+        }
+        //--------------------------
+        void mlbullet(int x, int y, char str[20]){
+            int xt;
+            int yt;
+
+            xt = x + 15;
+            yt = y - 2;
+
+            ofFill();
+            ofSetColor(0x029807);
+            ofCircle(x,y,5);
+
+            ofPushStyle();
+            ofSetLineWidth(2);
+            ofNoFill();
+            ofSetColor(0xffffff);
+            ofCircle(x,y,5);
+            ofPopStyle();
+
+            ofSetColor(0xffffff);
+            ofDrawBitmapString(str,xt,yt);
+        }
+        //-----------------------
 };
 
 #endif
